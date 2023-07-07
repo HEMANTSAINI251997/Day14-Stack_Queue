@@ -15,6 +15,13 @@ namespace Stack_Queue
             stack_LinkedList.Add(30);
             stack_LinkedList.Add(56);
             stack_LinkedList.Display();
+            Console.WriteLine("-----------------");
+            stack_LinkedList.Peek();
+            stack_LinkedList.Display();
+            Console.WriteLine("-----------------");
+            stack_LinkedList.Pop();
+            stack_LinkedList.Display();
+
         }
     }
 }

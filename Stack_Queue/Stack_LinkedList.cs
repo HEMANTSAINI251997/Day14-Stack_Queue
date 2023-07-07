@@ -38,5 +38,28 @@ namespace Stack_Queue
                 temp = temp.next;
             }
         }
+        public void Peek()
+        {
+            if(top == null)
+            {
+                Console.WriteLine("Stack is Empty");
+                return;
+            }
+            Console.WriteLine("Top Element is = " + top.data);
+        }
+        public void Pop()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("Stack is Empty");
+                return;
+            }
+            while (top != null)
+            {
+                Console.WriteLine("Deleted Element = " + top.data);
+                top = top.next;
+            }
+        }
+
     }
 }
