@@ -36,11 +36,15 @@ namespace Stack_Queue
                         break;
                     case 2:
                        
-                        queue_LinkedList.Enqueue(70);
-                        queue_LinkedList.Enqueue(30);
-                        queue_LinkedList.Enqueue(56);
+                        queue_LinkedList.EnQueue(70);
+                        queue_LinkedList.EnQueue(30);
+                        queue_LinkedList.EnQueue(56);
                         queue_LinkedList.Display();
                         Console.WriteLine("-----------------");
+                        queue_LinkedList.DeQueue();
+                        queue_LinkedList.Display();
+                        Console.WriteLine("-----------------");
+
                         break;
                     default:
                         Console.WriteLine("Invalid Input");
